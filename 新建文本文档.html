@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源推荐</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.4;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+        
+        .container {
+            max-width: 320px;
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .title {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 0.85rem;
+            color: #7f8c8d;
+        }
+        
+        .promo-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .promo-button {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 8px;
+            padding: 12px 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .promo-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+            border-color: #e0e0e0;
+        }
+        
+        .button-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: white;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        
+        .button-content {
+            flex-grow: 1;
+        }
+        
+        .button-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .button-description {
+            color: #7f8c8d;
+            font-size: 0.75rem;
+            margin-top: 2px;
+        }
+        
+        .button-arrow {
+            color: #bdc3c7;
+            font-size: 0.9rem;
+            margin-left: 5px;
+        }
+        
+        .icon-1 { background: #e74c3c; }
+        .icon-2 { background: #3498db; }
+        .icon-3 { background: #f39c12; }
+        .icon-4 { background: #2ecc71; }
+        
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            color: #95a5a6;
+            font-size: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="title">资源推荐</h2>
+            <p class="subtitle">精选优质资源</p>
+        </div>
+        
+        <div class="promo-buttons">
+            <!-- 推广链接1 -->
+            <a href="https://www.example-learning.com" class="promo-button" target="_blank">
+                <div class="button-icon icon-1">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="button-content">
+                    <div class="button-title">在线学习</div>
+                    <div class="button-description">5000+课程</div>
+                </div>
+                <div class="button-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+            
+            <!-- 推广链接2 -->
+            <a href="https://www.example-design.com" class="promo-button" target="_blank">
+                <div class="button-icon icon-2">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="button-content">
+                    <div class="button-title">设计资源</div>
+                    <div class="button-description">10万+资源</div>
+                </div>
+                <div class="button-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+            
+            <!-- 推广链接3 -->
+            <a href="https://www.example-shopping.com" class="promo-button" target="_blank">
+                <div class="button-icon icon-3">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="button-content">
+                    <div class="button-title">电商精选</div>
+                    <div class="button-description">100+品牌</div>
+                </div>
+                <div class="button-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+            
+            <!-- 推广链接4 -->
+            <a href="https://githubnext.com/" class="promo-button" target="_blank">
+                <div class="button-icon icon-4">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <div class="button-content">
+                    <div class="button-title">旅行规划</div>
+                    <div class="button-description">50+目的地</div>
+                </div>
+                <div class="button-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 资源推荐</p>
+        </div>
+    </div>
+</body>
+</html>
